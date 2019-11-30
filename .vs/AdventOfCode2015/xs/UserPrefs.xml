@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{992DAC04-977F-4AC4-ACA6-B4641121A7B5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdventOfCode2015/Day02.cs">
+    <Files>
+      <File FileName="AdventOfCode2015/Day02.cs" Line="18" Column="27" />
+      <File FileName="AdventOfCode2015/Program.cs" Line="10" Column="28" />
+      <File FileName="AdventOfCode2015/day02input.cs" Line="945" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AdventOfCode2015" expanded="True">
+            <Node name="AdventOfCode2015" expanded="True">
+              <Node name="Day02.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AdventOfCode2015 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
