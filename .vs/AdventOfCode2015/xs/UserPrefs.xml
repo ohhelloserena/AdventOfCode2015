@@ -1,22 +1,26 @@
 ﻿<Properties StartupConfiguration="{992DAC04-977F-4AC4-ACA6-B4641121A7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AdventOfCode2015/Day02.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdventOfCode2015/Day03.cs">
     <Files>
-      <File FileName="AdventOfCode2015/Day02.cs" Line="18" Column="27" />
       <File FileName="AdventOfCode2015/Program.cs" Line="10" Column="28" />
-      <File FileName="AdventOfCode2015/day02input.cs" Line="945" Column="9" />
+      <File FileName="AdventOfCode2015/day03input.cs" Line="1" Column="33" />
+      <File FileName="AdventOfCode2015/Day03.cs" Line="56" Column="18" />
+      <File FileName="AdventOfCode2015/Day01.cs" Line="11" Column="56" />
+      <File FileName="AdventOfCode2015/Day02.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AdventOfCode2015" expanded="True">
             <Node name="AdventOfCode2015" expanded="True">
-              <Node name="Day02.cs" selected="True" />
+              <Node name="Day03.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>visited.Count</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -24,7 +28,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day03.cs" relfile="AdventOfCode2015/Day03.cs" line="20" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
