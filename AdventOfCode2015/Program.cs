@@ -7,7 +7,7 @@ namespace AdventOfCode2015
         public static void Main(string[] args)
         {
         
-        var day = new Day04();
+        var day = new Day05();
         
         day.Run();
         Console.ReadLine();
