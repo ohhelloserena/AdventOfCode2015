@@ -6,7 +6,6 @@ namespace AdventOfCode2015
     public class Day03
     {
         private string[] input = System.IO.File.ReadAllLines(@"/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/day03input");
-        //private string[] input = { ">" };
 
         public void Run()
         {
