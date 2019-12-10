@@ -7,15 +7,16 @@ namespace AdventOfCode2015
     public class Day05
     {
         private string[] input = System.IO.File.ReadAllLines(@"/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/day05input");
-        //private string[] input = { "ugknbfddgicrmopn" };
+
         public void Run()
         {
-            PartOne();
+            //PartOne();
+            PartTwo();
         }
 
         public void PartOne()
         {
-            int naughtyCount = 0;
+            int niceCount = 0;
 
             int vowelCount = 0;
             string lastLetter = string.Empty;
@@ -60,7 +61,7 @@ namespace AdventOfCode2015
                     lastLetter = currLetter;
                 }
 
-                if (vowelCount > 2 && foundRepeatedLetter && !foundBanned) naughtyCount++;
+                if (vowelCount > 2 && foundRepeatedLetter && !foundBanned) niceCount++;
 
                 //reset variables
                 vowelCount = 0;
@@ -69,7 +70,76 @@ namespace AdventOfCode2015
                 foundBanned = false;
             }
 
-            Console.WriteLine("Part 1: " + naughtyCount);
+            Console.WriteLine("Part 1: " + niceCount);
+        }
+
+        private void PartTwo()
+        {
+            int niceCount = 0;
+
+            foreach (var currentString in input)
+            {
+                bool containsPair = this.HasRepeatingPair(currentString);
+                bool containsRepeating = this.HasOneRepeatingLetter(currentString);
+
+                if (containsPair && containsRepeating)
+                {
+                    niceCount++;
+                }
+
+            }
+
+            Console.WriteLine("Part 2: " + niceCount);
+        }
+
+        private bool HasRepeatingPair(string currentString)
+        {
+            int start = 0;
+            string prev = string.Empty;
+
+            while (start + 2 <= currentString.Length)
+            {
+                prev = currentString.Substring(start, 2);
+        
+                string[] array = currentString.ToCharArray().Select(c => c.ToString()).ToArray();
+
+                for (int i = start + 2; i < array.Length; i++)
+                {
+                    if (i + 2 <= array.Length)
+                    {
+                        string curr = currentString.Substring(i, 2);
+
+                        if (prev.Equals(curr))
+                        {
+                            return true;
+                        }
+                    }
+                }
+
+                start++;
+            }
+
+            return false;
+        }
+
+        private bool HasOneRepeatingLetter(string currentString)
+        {
+            int start = 0;
+            string prev = string.Empty;
+            string curr = string.Empty;
+
+            while (start + 2 < currentString.Length)
+            {
+                prev = currentString.Substring(start, 1);
+
+                curr = currentString.Substring(start + 2, 1);
+
+                if (prev.Equals(curr)) return true;
+
+                start++;
+            }
+
+            return false;
         }
 
     }
