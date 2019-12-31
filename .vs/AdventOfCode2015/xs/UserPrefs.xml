@@ -1,18 +1,15 @@
 ﻿<Properties StartupConfiguration="{992DAC04-977F-4AC4-ACA6-B4641121A7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AdventOfCode2015/Day05.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdventOfCode2015/day06input">
     <Files>
-      <File FileName="AdventOfCode2015/Day04.cs" Line="22" Column="27" />
-      <File FileName="AdventOfCode2015/Program.cs" />
-      <File FileName="AdventOfCode2015/Day05.cs" Line="1" Column="1" />
-      <File FileName="AdventOfCode2015/day05input" />
-      <File FileName="AdventOfCode2015/Day03.cs" Line="8" Column="20" />
+      <File FileName="AdventOfCode2015/Day06.cs" Line="44" Column="25" />
+      <File FileName="AdventOfCode2015/day06input" Line="16" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AdventOfCode2015" expanded="True">
             <Node name="AdventOfCode2015" expanded="True">
-              <Node name="Day05.cs" selected="True" />
+              <Node name="day06input" selected="True" />
             </Node>
           </Node>
         </State>
@@ -26,6 +23,8 @@
     <BreakpointStore>
       <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day04.cs" relfile="AdventOfCode2015/Day04.cs" line="24" column="1" />
       <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day04.cs" relfile="AdventOfCode2015/Day04.cs" line="38" column="1" />
+      <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day05.cs" relfile="AdventOfCode2015/Day05.cs" line="85" column="1" />
+      <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day05.cs" relfile="AdventOfCode2015/Day05.cs" line="131" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
