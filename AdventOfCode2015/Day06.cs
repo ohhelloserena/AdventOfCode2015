@@ -10,16 +10,74 @@ namespace AdventOfCode2015
 
         public void Run()
         {
-            PartOne();
-            //PartTwo();
+            //PartOne();
+            PartTwo();
         }
 
-        public void PartOne()
+        public void PartTwo()
         {
             int[,] lights = new int[1000, 1000];
-            int lightsOnCount = 0;
+            int brightnessCount = 0;
 
             foreach (var item in input) 
+            {
+                string instruction = this.ParseInstruction(item);
+
+                List<int> start = new List<int>();
+                List<int> end = new List<int>();
+
+                start = this.ParseStart(item);
+                end = this.ParseEnd(item);
+
+                int startX = start[0];
+                int startY = start[1];
+
+                int endX = end[0];
+                int endY = end[1];
+
+                for (int i = startX; i <= endX; i++)
+                {
+                    for (int j = startY; j <= endY; j++)
+                    {
+                        if (instruction == "on")
+                        {
+                            lights[i, j] = lights[i, j] + 1;
+                        }
+                        else if (instruction == "off")
+                        {
+                            if (lights[i, j] > 0)
+                            {
+                                lights[i, j] = lights[i, j] - 1;
+                            }
+                        }
+                        else
+                        {
+                            //instruction == "toggle"
+
+                            lights[i, j] = lights[i, j] + 2;
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < lights.GetLength(0); i++)
+            {
+                for (int j = 0; j < lights.GetLength(1); j++)
+                {
+                    brightnessCount = brightnessCount + lights[i, j];
+                }
+            }
+
+           
+            Console.WriteLine("Part 2: " + brightnessCount);
+        }
+
+        private void PartOne()
+        {
+            int[,] lights = new int[1000, 1000];
+            int brightnessCount = 0;
+
+            foreach (var item in input)
             {
                 string instruction = this.ParseInstruction(item);
 
@@ -69,19 +127,11 @@ namespace AdventOfCode2015
             {
                 for (int j = 0; j < lights.GetLength(1); j++)
                 {
-                    if (lights[i, j] == 1) lightsOnCount++;
+                    if (lights[i, j] == 1) brightnessCount++;
                 }
             }
 
-           
-            Console.WriteLine("Part 1: " + lightsOnCount);
-        }
-
-        private void PartTwo()
-        {
-            
-
-            Console.WriteLine("Part 2: ");
+            Console.WriteLine("Part 1: " + brightnessCount);
         }
 
         private string ParseInstruction(string input)
