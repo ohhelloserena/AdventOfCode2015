@@ -10,8 +10,8 @@ namespace AdventOfCode2015
 
         public void Run()
         {
-            //PartOne();
-            PartTwo();
+            PartOne();
+            //PartTwo();
         }
 
         public void PartTwo()
