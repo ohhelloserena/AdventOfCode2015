@@ -1,32 +1,29 @@
 ﻿<Properties StartupConfiguration="{992DAC04-977F-4AC4-ACA6-B4641121A7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AdventOfCode2015/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdventOfCode2015/Day08.cs">
     <Files>
-      <File FileName="AdventOfCode2015/Day07.cs" Line="52" Column="64" />
-      <File FileName="AdventOfCode2015/Day03.cs" Line="51" Column="27" />
-      <File FileName="AdventOfCode2015/Day06.cs" Line="14" Column="15" />
+      <File FileName="AdventOfCode2015/Day06.cs" Line="181" Column="1" IsPinned="True" />
+      <File FileName="AdventOfCode2015/Day07.cs" Line="119" Column="10" />
       <File FileName="AdventOfCode2015/Program.cs" Line="10" Column="28" />
-      <File FileName="AdventOfCode2015/day07input" Line="55" Column="1" NotebookId="1" />
+      <File FileName="AdventOfCode2015/Day08.cs" Line="29" Column="1" />
+      <File FileName="AdventOfCode2015/day08input" Line="1" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AdventOfCode2015" expanded="True">
             <Node name="AdventOfCode2015" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Day08.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>visited.Count</Value>
-          <Value>currentString.Length</Value>
-          <Value>array[0].ToString()</Value>
           <Value>item</Value>
-          <Value>ights[i, j]</Value>
-          <Value>lights[i, j]</Value>
-          <Value>i</Value>
-          <Value>j</Value>
+          <Value>verbatim</Value>
+          <Value>result.Length</Value>
+          <Value>str.Length</Value>
+          <Value>str</Value>
         </State>
       </Pad>
     </Pads>
@@ -41,6 +38,9 @@
       <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day05.cs" relfile="AdventOfCode2015/Day05.cs" line="85" column="1" />
       <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day05.cs" relfile="AdventOfCode2015/Day05.cs" line="131" column="1" />
       <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/45wmce9r.u9k~" relfile="AdventOfCode2015/45wmce9r.u9k~" line="167" column="1" />
+      <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day07.cs" relfile="AdventOfCode2015/Day07.cs" line="114" column="1" />
+      <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day08.cs" relfile="AdventOfCode2015/Day08.cs" line="31" column="1" />
+      <Breakpoint file="/Users/serenachen/RiderProjects/AdventOfCode2015/AdventOfCode2015/Day08.cs" relfile="AdventOfCode2015/Day08.cs" line="29" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

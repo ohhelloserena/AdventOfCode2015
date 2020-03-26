@@ -47,9 +47,11 @@
     <Compile Include="Day05.cs" />
     <Compile Include="Day06.cs" />
     <Compile Include="Day07.cs" />
+    <Compile Include="Day08.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="day01input" />
+    <Content Include="day08input" />
   </ItemGroup>
   <ItemGroup>
     <None Include="day02input" />
