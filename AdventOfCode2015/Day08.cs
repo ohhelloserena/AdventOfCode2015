@@ -11,8 +11,8 @@ namespace AdventOfCode2015
 
         public void Run()
         {
-            PartOne();
-            //PartTwo();
+            //PartOne();
+            PartTwo();
         }
 
         public void PartOne()
@@ -32,21 +32,37 @@ namespace AdventOfCode2015
                 string replacement = "Y";
                 result = Regex.Replace(result, pattern, replacement);
 
-                
-            
                 string resultSubstring = result.Substring(1, result.Length - 2);
 
                 inMemoryLength += resultSubstring.Length;
-
-                Console.WriteLine("item: " + item + " " + item.Length);
-                Console.WriteLine("str: " + str + " " + str.Length);
-                Console.WriteLine("result: " + result + " " + result.Length);
-                Console.WriteLine("resultSubstring: " + resultSubstring + " " + resultSubstring.Length);
-
             }
 
             Console.WriteLine("Day 8, Part 1: " + (codeRepLength - inMemoryLength));
 
+        }
+
+        public void PartTwo()
+        {
+            int codeRepLength = 0;
+            int inMemoryLength = 0;
+
+            foreach (string item in input)
+            {
+                Console.WriteLine(item);
+
+                codeRepLength += item.Length;
+
+                string str = item.ToString();
+                string result = str.Replace(@"\""", "HHHH");
+                result = result.Replace(@"\\", "JJJJ");
+                string pattern = @"\\x[\w\d]{2}";
+                string replacement = "YYYYY";
+                result = Regex.Replace(result, pattern, replacement);
+
+                inMemoryLength = inMemoryLength + result.Length + 4;
+
+            }
+            Console.WriteLine("Day 8, Part 2: " + (inMemoryLength - codeRepLength));
         }
 
         
